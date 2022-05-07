@@ -1,5 +1,5 @@
 ---
-const intereses = [
+const skills = [
   {
     text: "HTML",
     svg: `<svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +107,7 @@ const intereses = [
       <h4 class="font-semibold text-3xl">Datos Personales</h4>
 
       <article
-        class="grid grid-cols-2 text-base font-semibold justify-start content-start"
+        class="grid grid-cols-2 text-base font-semibold justify-start content-start "
       >
         <div class="flex flex-col items-start p-1">
           <span>Telef:</span>
@@ -127,7 +127,7 @@ const intereses = [
 
       <h4 class="font-semibold text-3xl mt-3">Estudios</h4>
 
-      <article>
+      <article class="font-semibold">
         <ul class="">
           <li class="">Ing.Informatica Universidad Camilo Cienfuegos</li>
         </ul>
@@ -135,12 +135,12 @@ const intereses = [
     </div>
 
     <div class="">
-      <h4 class="font-semibold text-3xl">Habilidades</h4>
-      <div class="flex gap-3 flex-wrap max-w-lg">
+      <h4 class="font-semibold text-3xl ">Habilidades</h4>
+      <div class="flex gap-3 flex-wrap max-w-lg  justify-items-center " >
         {
-          intereses.map(({ svg, text }) => {
+          skills.map(({ svg, text }) => {
             return (
-              <article class="text-white font-semibold bg-astro-100 p-4 rounded-md grid w-32 justify-items-center hover:scale-110 hover:-rotate-3 hover:shadow-md hover:shadow-orange-500 hover:text-orange-400 duration-200  ">
+              <article class="text-white font-semibold bg-astro-100 p-4 rounded-md grid w-32 justify-items-center hover:scale-110 hover:-rotate-3 hover:shadow-md hover:shadow-orange-500 hover:text-orange-400 duration-150  ">
                 <dvi set:html={svg} class=""></dvi>
                 <span set:text={text} />
               </article>
