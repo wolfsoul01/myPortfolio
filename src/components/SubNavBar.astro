@@ -1,0 +1,58 @@
+---
+const data = [
+  {
+    text: "Home",
+    svg: `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"/>
+</svg>`,
+  },
+  {
+    text: "Habilidades",
+    svg: `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="eosIconsApplicationOutlined0" fill="currentColor" d="m9 18l.7-.7l.7-.7l-1.3-1.3L7.8 14l1.3-1.3l1.3-1.3l-.7-.7L9 10l-2 2l-2 2l2 2l2 2zm4.6-1.4l.7.7l.7.7l2-2l2-2l-2-2l-2-2l-.7.7l-.7.7l1.3 1.3l1.3 1.3l-1.3 1.3l-1.3 1.3z"/>
+    </defs>
+    <path fill="currentColor" d="M1 3v2h22V3a2.001 2.001 0 0 0-2-2H3a2.001 2.001 0 0 0-2 2Zm3.007 1.008a1 1 0 1 1 .999-1a1 1 0 0 1-1 1Zm2.997-.001a1 1 0 1 1 1-1a1.002 1.002 0 0 1-1 1ZM1 6v14a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6Zm20 14H3V8h18Z"/>
+    <use href="#eosIconsApplicationOutlined0"/>
+    <use href="#eosIconsApplicationOutlined0"/>
+</svg>`,
+  },
+  {
+    text: "Portfolio",
+    svg: `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M10.14 2.006c.707 0 1.11.704 1.11 1.411V7.75h-.895a2 2 0 1 0 0 1.5h.895v10.898c0 .596-.252 1.189-.783 1.46a3.399 3.399 0 0 1-1.56.388c-1.51 0-2.633-.764-3.356-1.668a5.171 5.171 0 0 1-1.02-2.137a3.447 3.447 0 0 1-1.269-.69C2.552 16.89 2 15.91 2 14.466c0-.755.054-1.413.19-1.966H6.4c.678 0 1.24.5 1.335 1.151a2 2 0 1 0 1.507-.009A2.85 2.85 0 0 0 6.4 11H3.04a2.036 2.036 0 0 1 .495-.302a4.893 4.893 0 0 1-.178-1.127c-.033-.735.077-1.5.295-2.181c.216-.67.558-1.323 1.038-1.774a2.122 2.122 0 0 1 1.096-.567c.199-.84.706-1.534 1.353-2.037c.831-.648 1.92-1.006 3-1.006ZM12.75 17h1.65a2.85 2.85 0 0 0 2.85-2.85v-1.795a2 2 0 1 0-1.5 0v1.795a1.35 1.35 0 0 1-1.35 1.35h-1.65V3.417c0-.707.403-1.411 1.11-1.411c1.082 0 2.17.358 3.001 1.006c.647.503 1.154 1.198 1.353 2.037c.42.07.794.284 1.096.567c.48.451.822 1.103 1.038 1.774c.218.681.328 1.446.295 2.181c-.017.376-.072.76-.178 1.127l.066.03c.37.174.67.447.894.81c.425.685.575 1.671.575 2.928c0 1.445-.552 2.426-1.262 3.035a3.447 3.447 0 0 1-1.27.69a5.172 5.172 0 0 1-1.019 2.137c-.723.904-1.846 1.668-3.357 1.668a3.399 3.399 0 0 1-1.56-.387c-.53-.272-.782-.865-.782-1.461V17ZM8 8.5a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0Zm.5 6.5a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1Zm7.5-4.5a.5.5 0 1 0 1 0a.5.5 0 0 0-1 0Z"/>
+</svg>`,
+  },{
+    text:'Sobre mi',
+    svg:`<svg width="30" height="30" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M11.5 8A1.5 1.5 0 0 1 13 9.5v.5c0 1.971-1.86 4-5 4c-3.14 0-5-2.029-5-4v-.5A1.5 1.5 0 0 1 4.5 8h7ZM8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5Z"/>
+</svg>`
+  },
+  {
+    text:'Contactame',
+    svg:`<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M21 2H6a2 2 0 0 0-2 2v3H2v2h2v2H2v2h2v2H2v2h2v3a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-8 2.999c1.648 0 3 1.351 3 3A3.012 3.012 0 0 1 13 11c-1.647 0-3-1.353-3-3.001c0-1.649 1.353-3 3-3zM19 18H7v-.75c0-2.219 2.705-4.5 6-4.5s6 2.281 6 4.5V18z"/>
+</svg>`
+  }
+];
+---
+
+<nav class="fixed bottom-0 inset-x-0 p-5  backdrop-blur-sm shadow-md md:hidden">
+  <div class="grid grid-cols-3 py-4 gap-4">
+    {
+      data.map((ele) => {
+        return (
+          <div class="flex flex-col justify-center items-center">
+            <picture set:html={ele.svg} class="hover:text-orange-500 hover:rotate-6" />
+            <div set:text={ele.text} />
+          </div>
+        );
+      })
+    }
+  </div>
+
+  <div class=" ">
+    <div>Prtfolio</div>
+    <div></div>
+  </div>
+</nav>
