@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="">
 		<Hola/>
 		<SubNavBar/>
 		<NavBar/>
@@ -18,6 +18,10 @@ import NavBar from '../components/NavBar.astro';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
+	}
+
+	body{
+		background-color: hsl(256, 27%, 19%);
 	}
 	
 </style>
