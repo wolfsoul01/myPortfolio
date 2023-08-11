@@ -1,27 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hola from '../components/Hola.astro';
+import Home from '../components/Home.astro';
 import SubNavBar from '../components/SubNavBar.astro';
 import NavBar from '../components/NavBar.astro';
+import SobreMe from '../components/SobreMe.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="">
-		<Hola/>
+	<main class="bg-astro-100">
+		<Home/>
 		<SubNavBar/>
 		<NavBar/>
+		<SobreMe/>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-
 	body{
 		background-color: hsl(256, 27%, 19%);
+
 	}
 	
 </style>

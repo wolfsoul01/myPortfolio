@@ -1,0 +1,75 @@
+---
+const intereses = [
+  { text: "Juegos", svg: `` },
+  { text: "Musica", svg: `` },
+  { text: "Lectura", svg: `` },
+  { text: "Gym", svg: `` },
+  { text: "Dev", svg: `` },
+  { text: "Anime", svg: `` },
+  { text: "Juegos", svg: `` },
+  { text: "Juegos", svg: `` },
+];
+---
+
+<section class="text-white bg-astro-200 p-4 w-full mt-3 ">
+  <div class="flex flex-col  justify-center items-center">
+    <h2 class="font-bold text-4xl">Sobre Mi</h2>
+    <div class="max-w-lg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente odio
+      nam impedit soluta dolores corporis maxime fuga laboriosam natus minima!
+      Eaque et doloremque in aperiam libero veniam. Asperiores, nam est?
+    </div>
+  </div>
+
+  <article class="flex flex-col md:flex-row justify-center items-center  gap-5  ">
+    <div class="max-w-lg">
+      <h4 class="font-semibold text-3xl">Datos Personales</h4>
+
+      <article class="grid grid-cols-2 text-base font-semibold">
+        <div class="flex flex-col">
+            <span>Telef:</span>
+            <span>Email:</span>
+            <span>Web Site:</span>
+            <span>Pais:</span>
+            <span>Localidad:</span>
+        </div>
+        <div class="flex flex-col">
+            <span>+53 55432291</span>
+            <span>Email:alejandroDev.gmail.com</span>
+            <span>Web Site:</span>
+            <span>Cuba</span>
+            <span>Matanzas</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="">
+      <h4 class="font-semibold text-3xl ">Mis intereses</h4>
+      <div class="flex  gap-2 flex-wrap max-w-lg">
+        {intereses.map(ele=>{
+            return(<article class="text-white font-semibold bg-slate-400 p-4 rounded-md">
+                <picture set:html={ele.svg}/>
+                <span set:text={ele.text}></span>
+            </article>)
+        })}
+      </div>
+    </div>
+  </article>
+
+  <button
+    class="bg-transparent text-orange-500 py-1 font-semibold rounded-md border-2 border-orange-500 w-32 flex justify-center items-center gap-2 bg-pri hover:shadow-lg shadow-orange-500 hover:scale-105 mx-auto my-0 mt-7"
+  >
+    <svg
+      class=""
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="currentColor"
+        d="M9 1v6H5l7 7l7-7h-4V1H9M5 16v2h14v-2H5m0 4v2h14v-2H5Z"></path>
+    </svg>
+    Cv.pdf
+  </button>
+</section>

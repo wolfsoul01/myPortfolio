@@ -37,8 +37,8 @@ const data = [
 ];
 ---
 
-<nav class="fixed bottom-0 inset-x-0 p-5  backdrop-blur-sm shadow-md md:hidden text-white ">
-  <div id="menu" class="grid grid-cols-3 py-4 gap-4">
+<nav class="fixed bottom-0 inset-x-0 p-2  backdrop-blur-sm shadow-md sm:hidden text-white ">
+  <div id="menu" class="grid grid-cols-3 py-4 gap-4   ">
     {
       data.map((ele) => {
         return (
@@ -66,5 +66,7 @@ const data = [
 
     button.addEventListener('click',()=>{
         menu.classList.toggle('hidden')
+       
+        
     })
 </script>
