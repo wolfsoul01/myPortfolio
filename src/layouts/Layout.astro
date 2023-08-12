@@ -7,17 +7,18 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="min-w-full ">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{title}</title>
 	</head>
-	<body class="bg-astro-100 w-full inset-x-0">
-		<slot />
+	<body class="bg-astro-100 w-screen inset-x-0 ">
+		<slot class="w-screen" />
 	</body>
 </html>
 
