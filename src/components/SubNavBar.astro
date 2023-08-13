@@ -38,18 +38,21 @@ const data = [
 ---
 
 <nav class="fixed z-50 bottom-0 backdrop-blur-sm shadow-md sm:hidden text-white inset-x-0 ">
-  <div id="menu" class="grid grid-cols-3 py-4 gap-4 hidden  ">
-    {
-      data.map((ele) => {
-        return (
-          <div class="flex flex-col justify-center items-center">
-            <picture set:html={ele.svg} class="hover:text-orange-500 hover:rotate-6" />
-            <div set:text={ele.text} />
-          </div>
-        );
-      })
-    }
+  <div class=" h-0 origin-bottom duration-150  overflow-hidden " id="menu">
+    <div  class="grid grid-cols-3 py-4 gap-4   ">
+      {
+        data.map((ele) => {
+          return (
+            <div class="flex flex-col justify-center items-center">
+              <picture set:html={ele.svg} class="hover:text-orange-500 hover:rotate-6" />
+              <div set:text={ele.text} />
+            </div>
+          );
+        })
+      }
+    </div>
   </div>
+ 
 
   <div class="flex justify-between select-none  ">
     <div class="font-semibold text-xl">Prtfolio</div>
@@ -65,8 +68,6 @@ const data = [
     const menu =document.getElementById('menu')
 
     button.addEventListener('click',()=>{
-        menu.classList.toggle('hidden')
-       
-        
+       menu.classList.toggle('h-0')
     })
 </script>
