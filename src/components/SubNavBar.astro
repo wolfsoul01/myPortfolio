@@ -38,7 +38,7 @@ const data = [
 ---
 
 <nav class="fixed z-50 bottom-0 backdrop-blur-sm shadow-md sm:hidden text-white inset-x-0 ">
-  <div class=" h-0 origin-bottom duration-150  overflow-hidden " id="menu">
+  <div class=" hidden origin-bottom  overflow-hidden " id="menu">
     <div  class="grid grid-cols-3 py-4 gap-4   ">
       {
         data.map((ele) => {
@@ -68,6 +68,7 @@ const data = [
     const menu =document.getElementById('menu')
 
     button.addEventListener('click',()=>{
-       menu.classList.toggle('h-0')
+      menu.classList.toggle('hidden')
+     
     })
 </script>

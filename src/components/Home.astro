@@ -2,7 +2,7 @@
 import Web from '../../public/web-developer.svg'
 ---
 
-<header class="flex  text-white font-semibold mt-24 bg-astro-100">
+<header class="flex  text-white font-semibold mt-24 bg-astro-100 w-full container max-w-full overflow-hidden">
      <!---------------------------------------Barra lateral Icon-------------------------------->
     <div class=" md:flex flex-col  justify-center gap-10 min-h-full px-8 mr-4 hidden ">
         <div class="w-full">
@@ -58,6 +58,8 @@ import Web from '../../public/web-developer.svg'
 
     
     <!-- <img src="../../public/home.svg" alt="" class="w-1/2 hidden md:block"> -->
-    <img src={Web} alt="" class="w-1/2 hidden md:block">
+   
+        <img src={Web} alt="" class="w-1/2 max-w-full hidden md:block ">
+
 </header>
 
